@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dreamers</title>
+</head>
+<body>
+    <div class="banner-box">
+        <div class="logo-box">
+            <img src="./img/logo-image.png" alt="Picture of Dreamerz Logo">
+            <h1>Dreamers</h1>
+        </div>
+        <p>Photo by <a href="https://www.pexels.com/@dapo-abideen-1908900/">Dapo Abideen</a> on <a href="https://www.pexels.com">Pexels</a></p>
+    </div>
+
+    <div class="form-box">
+        <p>You know you need something like this in your life to help realize your deepest dreams... Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to ;)</p>
+
+        <form id='create-account' action="example-url" method="post">
+            <label for="Let's do this!"></label>
+
+            <div>
+                <label for="firstname">First Name
+                    <input type="text" id="firstname" name="first_name" placeholder="John" required>
+                </label>
+
+                <label for="lastname">Last Name
+                    <input type="text" id="lastname" name="last_name" placeholder="Doe" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="email_address">Email
+                    <input type="email" id="email_address" name="email_address" placeholder="example@gmail.com" required>
+                </label>
+
+                <label for="phone">Phone Number
+                    <input type="tel" id="phone" name="phone_num" pattern="[0-9]{10}" title="Should only contain numbers (no spaces or area code)" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="password">Password
+                    <input type="password" id="password" name="password" required>
+                </label>
+
+                <label for="confirm_password">Confirm Password
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </label>
+            </div>
+        </form>
+
+        <button form="create-account" type="submit" name="submit_acc">Create Account</button>
+        <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
+    </div>
+</body>
+</html>

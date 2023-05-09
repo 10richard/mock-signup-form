@@ -1,0 +1,145 @@
+:root {
+    /*Add main colors of website here - (still have to figure out)*/
+    --main-gray: #E8E8E8;
+    --main-pink: #F88379;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+a:hover {
+    opacity: 80%;
+}
+
+.banner-box {
+    background: url('./img/banner-image.jpg') no-repeat;
+    height: 100vh;
+    width: 40vw;
+    background-size: 40vw 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.banner-box a {
+    color: white;
+}
+
+.banner-box p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.logo-box {
+    background-color: black;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.logo-box img {
+    margin-top: 20px;
+    height: 4rem;
+}
+
+.logo-box h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+.form-box {
+    height: 100vh;
+    width: 60vw;
+    background-color: var(--main-gray);
+}
+
+.form-box>h2 {
+    font-size: 1.3rem;
+    max-width: 35vw;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.form-box>h2:first-child {
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.form-box>h2:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+form {
+    box-shadow: 0 2px 4px gray;
+    background-color: white;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+form legend {
+    font-size: 1.5rem;
+    margin-top: 4vh;
+    margin-left: 3.5vw;
+    padding-bottom: 3vh;
+}
+
+form div {
+    display: flex;
+    padding-bottom: 4vh;
+    justify-content: space-between;
+    margin-left: 3.5vw;
+    width: 35vw;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    width: 15vw;
+    height: 2.5vh;
+    border-radius: 5px;
+    border-width: 2px;
+    border: solid #DCDCDC;
+    margin-top: 2px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+button {
+    background-color: var(--main-pink);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    margin-left: 3.5vw;
+    margin-top: 2.5vh;
+    font-size: 1rem;
+}
+
+p {
+    margin-left: 3.5vw;
+    margin-top: 3.5vh;
+    font-size: 1rem;
+}
+
+p>a {
+    color: var(--main-pink);
+    text-decoration: none;
+}

@@ -8,23 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Dreamers</title>
+    <title>Dreamer Sign-Up</title>
 </head>
 <body>
     <div class="banner-box">
         <div class="logo-box">
+            <h1>Dreamer</h1>
             <img src="./img/logo-image.png" alt="Picture of Dreamerz Logo">
-            <h1>Dreamers</h1>
         </div>
         <p>Photo by <a href="https://www.pexels.com/@dapo-abideen-1908900/">Dapo Abideen</a> on <a href="https://www.pexels.com">Pexels</a></p>
     </div>
 
     <div class="form-box">
-        <p>You know you need something like this in your life to help realize your deepest dreams... Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to ;)</p>
+        <h2>With dedication and perseverance, achieving our dreams is possible... Sign up <em>now</em> to get started.</h2>
+        <h2>You <em>know</em> you want to.</h2>
 
         <form id='create-account' action="example-url" method="post">
-            <label for="Let's do this!"></label>
+            <legend>Let's do this!</legend>
 
             <div>
                 <label for="firstname">First Name
@@ -42,17 +42,17 @@
                 </label>
 
                 <label for="phone">Phone Number
-                    <input type="tel" id="phone" name="phone_num" pattern="[0-9]{10}" title="Should only contain numbers (no spaces or area code)" required>
+                    <input type="tel" id="phone" name="phone_num" pattern="[0-9]{10}" title="Should only contain ten numbers (no spaces or area code)" required>
                 </label>
             </div>
 
             <div>
                 <label for="password">Password
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" minlength='6' required>
                 </label>
 
                 <label for="confirm_password">Confirm Password
-                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <input type="password" id="confirm_password" name="confirm_password" minlength='6' required>
                 </label>
             </div>
         </form>

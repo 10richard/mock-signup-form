@@ -102,6 +102,8 @@ form div {
     width: 35vw;
 }
 
+
+
 input, label {
     display: block;
 }
@@ -113,6 +115,15 @@ input {
     border-width: 2px;
     border: solid #DCDCDC;
     margin-top: 2px;
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 0 0 2px black;
+}
+
+input:focus {
+    box-shadow: 0 0 2px black;
 }
 
 label {
@@ -131,6 +142,11 @@ button {
     margin-left: 3.5vw;
     margin-top: 2.5vh;
     font-size: 1rem;
+    box-shadow: 0 0 2px black;
+}
+
+button:hover {
+    opacity: 90%;
 }
 
 p {
@@ -139,7 +155,23 @@ p {
     font-size: 1rem;
 }
 
-p>a {
+.log_in {
     color: var(--main-pink);
     text-decoration: none;
+}
+
+.requirement {
+    color: red;
+    font-size: 0.7rem;
+    margin-left: auto;
+    margin-top: -0.1px;
+    text-transform: none;
+}
+
+input#password.invalid, input#confirm_password.invalid {
+    border-color: red;
+}
+
+input#password.valid, input#confirm_password.valid {
+    border-color: lightgreen;
 }

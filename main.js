@@ -3,6 +3,12 @@ let pass1 = document.querySelector('input#password');
 let pass2 = document.querySelector('input#confirm_password');
 
 function password_validation() {
+    if (pass1.value == '' && pass2.value == '') {
+        change_color('red');
+        requirement.textContent = 'Password fields are empty';
+        return
+    }
+
     if (pass1.value == pass2.value) {
         change_color('green');
         change_text('match');
@@ -31,9 +37,9 @@ function change_text(result) {
 }
 
 pass1.addEventListener('keyup', () => {
-    if (pass1.value.length > 0) password_validation();
+    password_validation();
 })
 
 pass2.addEventListener('keyup', () => {
-    if (pass1.value.length > 0) password_validation();
+    password_validation();
 })

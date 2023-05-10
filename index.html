@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
     <title>Dreamer Sign-Up</title>
 </head>
 <body>
@@ -23,7 +24,8 @@
         <h2>With dedication and perseverance, achieving our dreams is possible... Sign up <em>now</em> to get started.</h2>
         <h2>You <em>know</em> you want to.</h2>
 
-        <form id='create-account' action="example-url" method="post">
+        <!--Action attribute should be equal to URL that data will be sent to (backend)-->
+        <form id='create-account' action="#" method="post">
             <legend>Let's do this!</legend>
 
             <div>
@@ -48,17 +50,18 @@
 
             <div>
                 <label for="password">Password
-                    <input type="password" id="password" name="password" minlength='6' required>
+                    <input type="password" id="password" name="password" class="invalid" value='yay' required>
+                    <p class="requirement">Passwords must match</p>
                 </label>
 
                 <label for="confirm_password">Confirm Password
-                    <input type="password" id="confirm_password" name="confirm_password" minlength='6' required>
+                    <input type="password" id="confirm_password" name="confirm_password" class='invalid'  value='yay2' required>
                 </label>
             </div>
         </form>
 
         <button form="create-account" type="submit" name="submit_acc">Create Account</button>
-        <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
+        <p>Already have an account? <a class="log_in" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
     </div>
 </body>
 </html>
